@@ -1,5 +1,7 @@
+import weather
+
 def main():
-    print("Hello from up-mcp!")
+    weather.mcp.run(transport='stdio')
 
 
 if __name__ == "__main__":
