@@ -1,6 +1,6 @@
 # Up Bank MCP Server
 
-MCP wrapper of [@jcwillox](https://github.com/jcwillox)'s Python Up Bank API Wrapper [up-bank-api](https://github.com/jcwillox/up-bank-api) (it's wrappers all the way down)
+MCP wrapper of the Python Up Bank API Wrapper [up-bank-api](https://github.com/jcwillox/up-bank-api) (credit to [@jcwillox](https://github.com/jcwillox)) (it's wrappers all the way down)
 
 Made for Claude, by Claude (lol)
 
@@ -110,9 +110,4 @@ If you encounter issues:
 1. Verify your UP_TOKEN environment variable is set correctly
 2. Check that all dependencies are installed correctly
 3. Ensure you're using Python 3.10 or higher
-4. Check Claude's logs for MCP-related issues:
-   ```bash
-   tail -n 20 -f ~/Library/Logs/Claude/mcp*.log
-   ```
-
-![License](LICENSE)
+4. Check Claude's logs for MCP-related issues
