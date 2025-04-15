@@ -1,11 +1,17 @@
 # Up Bank MCP Server
 
-MCP wrapper for the Up Bank API, built in Python, using [up-bank-api](https://github.com/jcwillox/up-bank-api) by [@jcwillox](https://github.com/jcwillox).
+MCP wrapper of [@jcwillox](https://github.com/jcwillox)'s Python Up Bank API Wrapper [up-bank-api](https://github.com/jcwillox/up-bank-api) (it's wrappers all the way down)
 
 Made for Claude, by Claude (lol)
 
 This is a Model Context Protocol (MCP) server that provides tools for interacting with the Up Bank API. It allows you to manage accounts, transactions, categories, tags, and webhooks through MCP-enabled clients like Claude for Desktop.
 
+Feel free to contribute if you want to better optimise it for LLM, etc. However it's fine as is. I just wanted to learn how to make an MCP server.
+
+Now Claude can roast me for my transaction history, what else is it good for?
+
+![Claude roasting me](_photos/roast.png)
+**Figure: Too much takeout I guess**
 
 ## Prerequisites
 
