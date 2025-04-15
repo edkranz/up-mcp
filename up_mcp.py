@@ -187,7 +187,7 @@ async def get_webhooks() -> list[dict[str, Any]]:
         return webhook_list
 
 @mcp.tool()
-async def create_webhook(url: str, description: Optional[str] = None) -> str:
+async def create_webhook(url: str, description: Optional[str] = None) -> dict[str, Any]:
     """Create a new webhook.
     
     Args:
@@ -195,7 +195,13 @@ async def create_webhook(url: str, description: Optional[str] = None) -> str:
     """
     async with AsyncClient(token=UP_TOKEN) as client:
         webhook = await client.webhook.create(url, description)
-        return str(webhook)
+        return {
+            "id": webhook.id,
+            "url": webhook.url,
+            "description": webhook.description,
+            "secret_key": webhook.secret_key,
+            "created_at": webhook.created_at
+        }
 
 @mcp.tool()
 async def delete_webhook(webhook_id: str) -> bool:
