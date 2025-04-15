@@ -1,3 +1,4 @@
-mcp[cli]>=1.2.0
-httpx>=0.26.0
-up-bank-api>=2.4.0 
+mcp[cli]
+httpx
+up-bank-api 
+pytest-asyncio
