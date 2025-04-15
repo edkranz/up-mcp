@@ -6,9 +6,7 @@ import os
 # Initialize FastMCP server
 mcp = FastMCP("up-mcp")
 
-# Constants
-NWS_API_BASE = "https://api.up.com.au/api/v1"
-USER_AGENT = "up-mcp/1.0"
+
 UP_TOKEN = os.getenv("UP_TOKEN")
 
 @mcp.tool()
